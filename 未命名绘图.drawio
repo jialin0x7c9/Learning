@@ -1,17 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T13:00:16.489Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="611ICVi4eaG2rVKBR-dx" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T15:54:02.781Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="r0Cdjc0GucUzW-dPugn0" version="14.4.3" type="github">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="w0yrxzg1-SMqDO-tVgw--1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="280" y="220" width="120" height="60" as="geometry" />
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-24" value="&lt;font style=&quot;font-size: 26px&quot;&gt;&lt;span style=&quot;font-weight: 700 ; text-align: center&quot;&gt;&lt;font style=&quot;font-size: 26px&quot;&gt;DeliveryNotificationManager作为&lt;/font&gt;&lt;/span&gt;&lt;b&gt;&lt;font style=&quot;font-size: 26px&quot;&gt;发送端：&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="shape=note;size=156;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="840" width="1030" height="515" as="geometry" />
         </mxCell>
-        <mxCell id="3NUWKR0dTSGGjfVTilBm-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="414" y="210" width="120" height="80" as="geometry" />
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-21" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;mInFlightPackets&lt;/font&gt;&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="990" width="420" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="3NUWKR0dTSGGjfVTilBm-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="220" width="120" height="60" as="geometry" />
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-1" value="DeliveryNotificationManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="220" width="530" height="420" as="geometry">
+            <mxRectangle x="110" y="260" width="190" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-2" value="作为发送端需要的数据成员：&#xa;- PacketSequenceNumber mNextOutgoingSequenceNumber;&#xa;- deque&lt; InFlightPacket &gt; mInFlightPackets;&#xa;- uint32_t		mDeliveredPacketCount;&#xa;&#xa;&#xa;作为接收端需要的数据成员：&#xa;- mPendingAcks: deque&lt; AckRange &gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F7iGhUbM-gdQp5Ccjbes-1">
+          <mxGeometry y="26" width="530" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="F7iGhUbM-gdQp5Ccjbes-1">
+          <mxGeometry y="160" width="530" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-4" value="作为发送端需要的方法：&#xa;- InFlightPacket*		WriteSequenceNumber( OutputMemoryBitStream&amp; inOutputStream );&#xa;&#xa;&#xa;&#xa;&#xa;作为接收端需要的方法：&#xa;- void				HandlePacketDeliveryFailure( const InFlightPacket&amp; inFlightPacket );&#xa;- void HandlePacketDeliverySuccess( const InFlightPacket&amp; inFlightPacket );&#xa;&#xa;&#xa;&#xa;&#xa;a" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F7iGhUbM-gdQp5Ccjbes-1">
+          <mxGeometry y="168" width="530" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-5" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="240" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-6" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F7iGhUbM-gdQp5Ccjbes-5">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="F7iGhUbM-gdQp5Ccjbes-5">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-8" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F7iGhUbM-gdQp5Ccjbes-5">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-9" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px&quot;&gt;mNextOutgoingSequenceNumber&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1160" width="241" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-10" value="&lt;font style=&quot;font-size: 22px&quot;&gt;OutputMemoryBitStream&lt;/font&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1250" width="700" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-12" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="172" y="1140" as="sourcePoint" />
+            <mxPoint x="172" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-13" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#FFFF33;" vertex="1" parent="1">
+          <mxGeometry x="111" y="1015" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-14" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#FFFF33;" vertex="1" parent="1">
+          <mxGeometry x="-9" y="1015" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F7iGhUbM-gdQp5Ccjbes-15" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#FFFF33;" vertex="1" parent="1">
+          <mxGeometry x="-129" y="1015" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
