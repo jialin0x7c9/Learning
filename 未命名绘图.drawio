@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-10T01:43:18.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="45-9uqPHEhHMbFc7cAHx" version="14.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-10T10:59:08.734Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="VJlBW6QOf1DTtNJLkckV" version="14.4.5" type="github">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
     <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -524,6 +524,15 @@
         </mxCell>
         <mxCell id="PdD96DAcnEqBJffwbTBB-12" value="&lt;b style=&quot;font-size: 15px&quot;&gt;ReplicationManager&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EA6B66;" vertex="1" parent="1">
           <mxGeometry x="-228.5" y="3840" width="239.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PdD96DAcnEqBJffwbTBB-16" value="本地玩家看其他玩家：航位推测" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="329.25" y="3790" width="382.25" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PdD96DAcnEqBJffwbTBB-17" value="客户端如何估算RTT时间" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="318.88" y="3560" width="382.25" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PdD96DAcnEqBJffwbTBB-18" value="本地玩家：移动重放" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="3890" width="240" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
