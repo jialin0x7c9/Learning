@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T01:03:41.002Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="V2Ux7cdMa696fONS0WhO" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T01:14:33.939Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="HcXK5ANEzaTAgzOPSpxI" version="14.4.7" type="github">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -534,8 +534,8 @@
         <mxCell id="PR4SLYC4fFtmZ1cicV5y-5" value="+ virtual void HandleEvent( SDL_Event* inEvent )；&#xa;# virtual void DoFrame();&#xa;- int DoRunLoop();&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PR4SLYC4fFtmZ1cicV5y-2" vertex="1">
           <mxGeometry y="118" width="340" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="vX0OPJzjhCdN2KYU3LYD-1" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="499" width="270" height="86" as="geometry" />
+        <mxCell id="vX0OPJzjhCdN2KYU3LYD-1" value="Server" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="380" width="270" height="260" as="geometry" />
         </mxCell>
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-1">
           <mxGeometry y="26" width="270" height="26" as="geometry" />
@@ -543,8 +543,8 @@
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-1">
           <mxGeometry y="52" width="270" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="vX0OPJzjhCdN2KYU3LYD-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-1">
-          <mxGeometry y="60" width="270" height="26" as="geometry" />
+        <mxCell id="vX0OPJzjhCdN2KYU3LYD-4" value="+ static bool StaticInit();&#xa;+ virtual void DoFrame() override;&#xa;&#xa;+ virtual int Run();&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-1">
+          <mxGeometry y="60" width="270" height="200" as="geometry" />
         </mxCell>
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-5" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.441;entryY=1.098;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="vX0OPJzjhCdN2KYU3LYD-1" target="PR4SLYC4fFtmZ1cicV5y-5">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -553,7 +553,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-7" value="Timing" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1013.81" y="-358" width="314.44" height="218" as="geometry" />
+          <mxGeometry x="1013.81" y="-358" width="314.44" height="218" as="geometry">
+            <mxRectangle x="1013.81" y="-358" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-8" value="+ static Timing sInstance; &#xa;- float		mDeltaTime;&#xa;- uint64_t	mDeltaTick;&#xa;- double		mLastFrameStartTime;&#xa;- float		mFrameStartTimef;&#xa;- double		mPerfCountDuration;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-7">
           <mxGeometry y="26" width="314.44" height="104" as="geometry" />
@@ -597,7 +599,7 @@
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-18">
           <mxGeometry y="192" width="530" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="vX0OPJzjhCdN2KYU3LYD-21" value="+ virtual uint32_t	Write( OutputMemoryBitStream&amp; inOutputStream, uint32_t inDirtyState ) const;&#xa;+ virtual void		Read( InputMemoryBitStream&amp; inInputStream );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-18">
+        <mxCell id="vX0OPJzjhCdN2KYU3LYD-21" value="+ virtual void	Update();&#xa;+ virtual uint32_t	Write( OutputMemoryBitStream&amp; inOutputStream, uint32_t inDirtyState ) const;&#xa;+ virtual void		Read( InputMemoryBitStream&amp; inInputStream );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vX0OPJzjhCdN2KYU3LYD-18">
           <mxGeometry y="200" width="530" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vX0OPJzjhCdN2KYU3LYD-22" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;fontColor=#FF0000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.504;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vX0OPJzjhCdN2KYU3LYD-21" target="vX0OPJzjhCdN2KYU3LYD-13">
