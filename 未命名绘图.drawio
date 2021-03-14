@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T15:43:03.819Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="SkkDrDKfjhdZuKdXMoBl" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T15:48:52.815Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="gqUAvsZJoo_6JnWIeA_H" version="14.4.8" type="github">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
-    <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3671" dy="2693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -624,16 +624,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hoWRCG5-ymQDqq8NVkcZ-8" value="NetworkManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1900" y="923" width="160" height="92" as="geometry" />
+          <mxGeometry x="1800" y="990" width="490" height="344" as="geometry" />
         </mxCell>
-        <mxCell id="hoWRCG5-ymQDqq8NVkcZ-9" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="hoWRCG5-ymQDqq8NVkcZ-8" vertex="1">
-          <mxGeometry y="26" width="160" height="32" as="geometry" />
+        <mxCell id="hoWRCG5-ymQDqq8NVkcZ-9" value="	typedef unordered_map&lt; int, ClientProxyPtr &gt;	IntToClientMap;&#xa;	typedef unordered_map&lt; SocketAddress, ClientProxyPtr &gt;	AddressToClientMap;&#xa;&#xa;- AddressToClientMap		mAddressToClientMap;&#xa;- IntToClientMap			mPlayerIdToClientMap;&#xa;- int				mNewPlayerId;&#xa;- int				mNewNetworkId;&#xa;- float			mTimeOfLastSatePacket;&#xa;- float			mTimeBetweenStatePackets;&#xa;- float			mClientDisconnectTimeout;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="hoWRCG5-ymQDqq8NVkcZ-8" vertex="1">
+          <mxGeometry y="26" width="490" height="284" as="geometry" />
         </mxCell>
         <mxCell id="hoWRCG5-ymQDqq8NVkcZ-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="hoWRCG5-ymQDqq8NVkcZ-8" vertex="1">
-          <mxGeometry y="58" width="160" height="8" as="geometry" />
+          <mxGeometry y="310" width="490" height="8" as="geometry" />
         </mxCell>
         <mxCell id="hoWRCG5-ymQDqq8NVkcZ-11" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="hoWRCG5-ymQDqq8NVkcZ-8" vertex="1">
-          <mxGeometry y="66" width="160" height="26" as="geometry" />
+          <mxGeometry y="318" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="hoWRCG5-ymQDqq8NVkcZ-12" value="NetworkManager&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="1730" y="290" width="650" height="560" as="geometry" />
@@ -660,7 +660,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="oTfHA0sGzU3xhVYq_xLa-3" value="ReceivedPacket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="2540" y="520" width="260" height="150" as="geometry" />
+          <mxGeometry x="2470" y="510" width="260" height="150" as="geometry" />
         </mxCell>
         <mxCell id="oTfHA0sGzU3xhVYq_xLa-4" value="- float					mReceivedTime;&#xa;- InputMemoryBitStream	mPacketBuffer;&#xa;- SocketAddress			mFromAddress;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="oTfHA0sGzU3xhVYq_xLa-3">
           <mxGeometry y="26" width="260" height="54" as="geometry" />
