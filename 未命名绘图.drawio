@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T01:25:34.505Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="zbfIycM3FnWFgxn6yGM-" version="14.4.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-15T16:16:53.573Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="kclazTPpcy_h5gM54nFt" version="14.4.8" type="github" pages="2">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
-    <mxGraphModel dx="5567" dy="2540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -516,215 +516,308 @@
       <root>
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-0" />
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-1" parent="oc5jsSyHZVvdx0_5WuaF-0" />
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-0" value="DeliveryNotificationManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
-          <mxGeometry x="2650" y="-860" width="530" height="578" as="geometry">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-0" value="DeliveryNotificationManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
+          <mxGeometry x="3310" y="830" width="530" height="578" as="geometry">
             <mxRectangle x="110" y="260" width="190" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-1" value="作为发送端需要的数据成员：&#xa;- PacketSequenceNumber mNextOutgoingSequenceNumber;&#xa;- deque&lt; InFlightPacket &gt; mInFlightPackets;&#xa;- uint32_t  mDeliveredPacketCount;&#xa;- PacketSequenceNumber	mNextOutgoingSequenceNumber;&#xa;&#xa;作为接收端需要的数据成员：&#xa;- mPendingAcks: deque&lt; AckRange &gt;&#xa;- PacketSequenceNumber	mNextExpectedSequenceNumber;&#xa;&#xa;统计需要：&#xa;- uint32_t		mDeliveredPacketCount;&#xa;- uint32_t		mDroppedPacketCount;&#xa;- uint32_t		mDispatchedPacketCount;&#xa;&#xa;- bool					mShouldSendAcks;&#xa;- bool					mShouldProcessAcks;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-1" value="作为发送端需要的数据成员：&#xa;- PacketSequenceNumber mNextOutgoingSequenceNumber;&#xa;- deque&lt; InFlightPacket &gt; mInFlightPackets;&#xa;- uint32_t  mDeliveredPacketCount;&#xa;- PacketSequenceNumber mNextOutgoingSequenceNumber;&#xa;&#xa;作为接收端需要的数据成员：&#xa;- mPendingAcks: deque&lt; AckRange &gt;&#xa;- PacketSequenceNumber mNextExpectedSequenceNumber;&#xa;&#xa;统计需要：&#xa;- uint32_t  mDeliveredPacketCount;&#xa;- uint32_t  mDroppedPacketCount;&#xa;- uint32_t  mDispatchedPacketCount;&#xa;&#xa;- bool     mShouldSendAcks;&#xa;- bool     mShouldProcessAcks;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-0" vertex="1">
           <mxGeometry y="26" width="530" height="264" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-0" vertex="1">
           <mxGeometry y="290" width="530" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-3" value="+ DeliveryNotificationManager( bool inShouldSendAcks, bool inShouldProcessAcks );&#xa;+ ~DeliveryNotificationManager();&#xa;+ void				ProcessTimedOutPackets();&#xa;+ uint32_t			GetDroppedPacketCount()		const;&#xa;+ uint32_t			GetDeliveredPacketCount()	const;&#xa;+ uint32_t			GetDispatchedPacketCount()	const;+ const deque&lt; InFlightPacket &gt;&amp;	GetInFlightPackets()	const;&#xa;&#xa;作为发送端需要的方法：&#xa;+ inline	InFlightPacket*		WriteState( OutputMemoryBitStream&amp; inOutputStream );&#xa;- InFlightPacket*  WriteSequenceNumber( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void				WriteAckData( OutputMemoryBitStream&amp; inOutputStream );&#xa;&#xa;作为接收端需要的方法：&#xa;+ inline	bool				ReadAndProcessState( InputMemoryBitStream&amp; inInputStream );&#xa;- void    HandlePacketDeliveryFailure( const InFlightPacket&amp; inFlightPacket );&#xa;- void HandlePacketDeliverySuccess( const InFlightPacket&amp; inFlightPacket );&#xa;- bool				ProcessSequenceNumber( InputMemoryBitStream&amp; inInputStream );&#xa;- void				ProcessAcks( InputMemoryBitStream&amp; inInputStream );&#xa;- void				AddPendingAck( PacketSequenceNumber inSequenceNumber );&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-3" value="+ DeliveryNotificationManager( bool inShouldSendAcks, bool inShouldProcessAcks );&#xa;+ ~DeliveryNotificationManager();&#xa;+ void    ProcessTimedOutPackets();&#xa;+ uint32_t   GetDroppedPacketCount()  const;&#xa;+ uint32_t   GetDeliveredPacketCount() const;&#xa;+ uint32_t   GetDispatchedPacketCount() const;+ const deque&lt; InFlightPacket &gt;&amp; GetInFlightPackets() const;&#xa;&#xa;作为发送端需要的方法：&#xa;+ inline InFlightPacket*  WriteState( OutputMemoryBitStream&amp; inOutputStream );&#xa;- InFlightPacket*  WriteSequenceNumber( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void    WriteAckData( OutputMemoryBitStream&amp; inOutputStream );&#xa;&#xa;作为接收端需要的方法：&#xa;+ inline bool    ReadAndProcessState( InputMemoryBitStream&amp; inInputStream );&#xa;- void    HandlePacketDeliveryFailure( const InFlightPacket&amp; inFlightPacket );&#xa;- void HandlePacketDeliverySuccess( const InFlightPacket&amp; inFlightPacket );&#xa;- bool    ProcessSequenceNumber( InputMemoryBitStream&amp; inInputStream );&#xa;- void    ProcessAcks( InputMemoryBitStream&amp; inInputStream );&#xa;- void    AddPendingAck( PacketSequenceNumber inSequenceNumber );&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-0" vertex="1">
           <mxGeometry y="298" width="530" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-4" value="Engine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-4" value="Engine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="1039.5" y="-1050" width="340" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-5" value="+ static std::unique_ptr&lt; Engine &gt; sInstance;&#xa;- bool mShouldKeepRunning;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-4">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-5" value="+ static std::unique_ptr&lt; Engine &gt; sInstance;&#xa;- bool mShouldKeepRunning;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-4" vertex="1">
           <mxGeometry y="26" width="340" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-4">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-4" vertex="1">
           <mxGeometry y="110" width="340" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-7" value="+ virtual void HandleEvent( SDL_Event* inEvent )；&#xa;# virtual void DoFrame();&#xa;- int DoRunLoop();&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-4">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-7" value="+ virtual void HandleEvent( SDL_Event* inEvent )；&#xa;# virtual void DoFrame();&#xa;- int DoRunLoop();&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-4" vertex="1">
           <mxGeometry y="118" width="340" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-8" value="Server" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-8" value="Server" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="984" y="-714" width="410" height="234" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-8">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-8" vertex="1">
           <mxGeometry y="26" width="410" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-10" value="+ static bool StaticInit();&#xa;+ virtual void DoFrame() override;&#xa;+ virtual int Run();&#xa;+ void HandleNewClient( ClientProxyPtr inClientProxy );&#xa;+ void HandleLostClient( ClientProxyPtr inClientProxy );&#xa;+ RoboCatPtr GetCatForPlayer( int inPlayerId );&#xa;+ void SpawnCatForPlayer( int inPlayerId );&#xa;&#xa;- Server();&#xa;- void SetupWorld();&#xa;- bool InitNetworkManager();&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-8">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-10" value="+ static bool StaticInit();&#xa;+ virtual void DoFrame() override;&#xa;+ virtual int Run();&#xa;+ void HandleNewClient( ClientProxyPtr inClientProxy );&#xa;+ void HandleLostClient( ClientProxyPtr inClientProxy );&#xa;+ RoboCatPtr GetCatForPlayer( int inPlayerId );&#xa;+ void SpawnCatForPlayer( int inPlayerId );&#xa;&#xa;- Server();&#xa;- void SetupWorld();&#xa;- bool InitNetworkManager();&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-8" vertex="1">
           <mxGeometry y="34" width="410" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-11" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.454;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-8" target="C9IEF28Jtl-8NMZRrq5K-7">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-11" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.454;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-8" target="C9IEF28Jtl-8NMZRrq5K-7" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1104.5" y="-451" as="sourcePoint" />
             <mxPoint x="1264.5" y="-451" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-12" value="Timing" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-12" value="Timing" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="620" y="-1430" width="314.44" height="218" as="geometry">
             <mxRectangle x="1013.81" y="-358" width="70" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-13" value="+ static Timing sInstance; &#xa;- float  mDeltaTime;&#xa;- uint64_t mDeltaTick;&#xa;- double  mLastFrameStartTime;&#xa;- float  mFrameStartTimef;&#xa;- double  mPerfCountDuration;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-12">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-13" value="+ static Timing sInstance; &#xa;- float  mDeltaTime;&#xa;- uint64_t mDeltaTick;&#xa;- double  mLastFrameStartTime;&#xa;- float  mFrameStartTimef;&#xa;- double  mPerfCountDuration;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-12" vertex="1">
           <mxGeometry y="26" width="314.44" height="104" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-12">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-12" vertex="1">
           <mxGeometry y="130" width="314.44" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-15" value="+ void Update();&#xa;+ float GetDeltaTime();&#xa;+ double GetTime() const;&#xa;+ float GetTimef() const&#xa;+ float GetFrameStartTime() const" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-12">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-15" value="+ void Update();&#xa;+ float GetDeltaTime();&#xa;+ double GetTime() const;&#xa;+ float GetTimef() const&#xa;+ float GetFrameStartTime() const" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-12" vertex="1">
           <mxGeometry y="138" width="314.44" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-16" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.463;exitY=1.016;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-15" target="C9IEF28Jtl-8NMZRrq5K-4">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-16" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.463;exitY=1.016;exitDx=0;exitDy=0;exitPerimeter=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-15" target="C9IEF28Jtl-8NMZRrq5K-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="835" y="-860" as="sourcePoint" />
             <mxPoint x="995" y="-860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-17" value="World" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-17" value="World" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="1015.5" y="-1430" width="390" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-18" value="+ static std::unique_ptr&lt; World &gt; sInstance;&#xa;- std::vector&lt; GameObjectPtr &gt; mGameObjects;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-17">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-18" value="+ static std::unique_ptr&lt; World &gt; sInstance;&#xa;- std::vector&lt; GameObjectPtr &gt; mGameObjects;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-17" vertex="1">
           <mxGeometry y="26" width="390" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-17">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-17" vertex="1">
           <mxGeometry y="76" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-20" value="+ static void StaticInit();&#xa;- void Update();&#xa;+ void AddGameObject( GameObjectPtr inGameObject );&#xa;+ void RemoveGameObject( GameObjectPtr inGameObject );&#xa;+ const std::vector&lt; GameObjectPtr &gt;&amp; GetGameObjects() const;&#xa;- World();&#xa;- int GetIndexOfGameObject( GameObjectPtr inGameObject );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-17">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-20" value="+ static void StaticInit();&#xa;- void Update();&#xa;+ void AddGameObject( GameObjectPtr inGameObject );&#xa;+ void RemoveGameObject( GameObjectPtr inGameObject );&#xa;+ const std::vector&lt; GameObjectPtr &gt;&amp; GetGameObjects() const;&#xa;- World();&#xa;- int GetIndexOfGameObject( GameObjectPtr inGameObject );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-17" vertex="1">
           <mxGeometry y="84" width="390" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-21" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.495;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-20" target="C9IEF28Jtl-8NMZRrq5K-4">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-21" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.495;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-20" target="C9IEF28Jtl-8NMZRrq5K-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1325.4957200000001" y="-1080" as="sourcePoint" />
             <mxPoint x="1718.91" y="-920.28" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-22" value="GameObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-22" value="GameObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="944.5" y="-1790" width="530" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-23" value="+ enum { kClassId = inCode };&#xa;+ virtual uint32_t GetClassId() const;&#xa;+ static GameObject* CreateInstance() ;&#xa;- Vector3           mLocation;&#xa;- Vector3           mColor;&#xa;- float           mCollisionRadius;&#xa;- float           mRotation;&#xa;- float           mScale;&#xa;- int            mIndexInWorld;&#xa;- bool           mDoesWantToDie;&#xa;- int            mNetworkId;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-22">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-23" value="+ enum { kClassId = inCode };&#xa;+ virtual uint32_t GetClassId() const;&#xa;+ static GameObject* CreateInstance() ;&#xa;- Vector3           mLocation;&#xa;- Vector3           mColor;&#xa;- float           mCollisionRadius;&#xa;- float           mRotation;&#xa;- float           mScale;&#xa;- int            mIndexInWorld;&#xa;- bool           mDoesWantToDie;&#xa;- int            mNetworkId;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-22" vertex="1">
           <mxGeometry y="26" width="530" height="166" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-22">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-22" vertex="1">
           <mxGeometry y="192" width="530" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-25" value="+ virtual void Update();&#xa;+ virtual uint32_t Write( OutputMemoryBitStream&amp; inOutputStream, uint32_t inDirtyState ) const;&#xa;+ virtual void  Read( InputMemoryBitStream&amp; inInputStream );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-22">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-25" value="+ virtual void Update();&#xa;+ virtual uint32_t Write( OutputMemoryBitStream&amp; inOutputStream, uint32_t inDirtyState ) const;&#xa;+ virtual void  Read( InputMemoryBitStream&amp; inInputStream );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-22" vertex="1">
           <mxGeometry y="200" width="530" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-26" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;fontColor=#FF0000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.504;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-25" target="C9IEF28Jtl-8NMZRrq5K-17">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-26" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;fontColor=#FF0000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.504;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-25" target="C9IEF28Jtl-8NMZRrq5K-17" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1685.5" y="-1400" as="sourcePoint" />
             <mxPoint x="1845.5" y="-1400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-27" value="GameObjectRegistry" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-27" value="GameObjectRegistry" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="1455.5" y="-1430" width="570" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-28" value="+ static std::unique_ptr&lt; GameObjectRegistry &gt;  sInstance;&#xa;- unordered_map&lt; uint32_t, GameObjectCreationFunc &gt; mNameToGameObjectCreationFunctionMap;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-27">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-28" value="+ static std::unique_ptr&lt; GameObjectRegistry &gt;  sInstance;&#xa;- unordered_map&lt; uint32_t, GameObjectCreationFunc &gt; mNameToGameObjectCreationFunctionMap;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-27" vertex="1">
           <mxGeometry y="26" width="570" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-27">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-27" vertex="1">
           <mxGeometry y="100" width="570" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-30" value="+ static void StaticInit();&#xa;+ void RegisterCreationFunction( uint32_t inFourCCName, GameObjectCreationFunc inCreationFunction );&#xa;+ GameObjectPtr CreateGameObject( uint32_t inFourCCName );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-27">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-30" value="+ static void StaticInit();&#xa;+ void RegisterCreationFunction( uint32_t inFourCCName, GameObjectCreationFunc inCreationFunction );&#xa;+ GameObjectPtr CreateGameObject( uint32_t inFourCCName );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-27" vertex="1">
           <mxGeometry y="108" width="570" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-31" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.584;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-30" target="C9IEF28Jtl-8NMZRrq5K-4">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-31" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.584;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-30" target="C9IEF28Jtl-8NMZRrq5K-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1662.5500000000002" y="-1000" as="sourcePoint" />
             <mxPoint x="1445.5" y="-840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-32" value="NetworkManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
-          <mxGeometry x="1490" y="-54" width="650" height="560" as="geometry" />
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-32" value="NetworkManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
+          <mxGeometry x="1500" y="810" width="650" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-33" value=" typedef unordered_map&lt; int, ClientProxyPtr &gt; IntToClientMap;&#xa; typedef unordered_map&lt; SocketAddress, ClientProxyPtr &gt; AddressToClientMap;&#xa;&#xa;+ static NetworkManagerServer*	sInstance;&#xa;- AddressToClientMap  mAddressToClientMap;&#xa;- IntToClientMap   mPlayerIdToClientMap;&#xa;- int    mNewPlayerId;&#xa;- int    mNewNetworkId;&#xa;- float   mTimeOfLastSatePacket;&#xa;- float   mTimeBetweenStatePackets;&#xa;- float   mClientDisconnectTimeout;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-32">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-33" value=" typedef unordered_map&lt; int, ClientProxyPtr &gt; IntToClientMap;&#xa; typedef unordered_map&lt; SocketAddress, ClientProxyPtr &gt; AddressToClientMap;&#xa;&#xa;+ static NetworkManagerServer* sInstance;&#xa;- AddressToClientMap  mAddressToClientMap;&#xa;- IntToClientMap   mPlayerIdToClientMap;&#xa;- int    mNewPlayerId;&#xa;- int    mNewNetworkId;&#xa;- float   mTimeOfLastSatePacket;&#xa;- float   mTimeBetweenStatePackets;&#xa;- float   mClientDisconnectTimeout;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-32" vertex="1">
           <mxGeometry y="26" width="650" height="164" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-32">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-32" vertex="1">
           <mxGeometry y="190" width="650" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-35" value="+ static bool				StaticInit( uint16_t inPort );&#xa;+ virtual void			ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) override;&#xa;+ virtual void			HandleConnectionReset( const SocketAddress&amp; inFromAddress ) override;&#xa;+ void			SendOutgoingPackets();&#xa;+ void			CheckForDisconnects();&#xa;+ void			RegisterGameObject( GameObjectPtr inGameObject );&#xa;+ inline	GameObjectPtr	RegisterAndReturn( GameObject* inGameObject );&#xa;+ void			UnregisterGameObject( GameObject* inGameObject );&#xa;+ void			SetStateDirty( int inNetworkId, uint32_t inDirtyState );&#xa;+ void			RespawnCats();&#xa;+ ClientProxyPtr	GetClientProxy( int inPlayerId ) const;&#xa;&#xa;- NetworkManagerServer();&#xa;- void	HandlePacketFromNewClient( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress );&#xa;- void	ProcessPacket( ClientProxyPtr inClientProxy, InputMemoryBitStream&amp; inInputStream );&#xa;- void	SendWelcomePacket( ClientProxyPtr inClientProxy );&#xa;- void	UpdateAllClients();&#xa;- void	AddWorldStateToPacket( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void	AddScoreBoardStateToPacket( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void	SendStatePacketToClient( ClientProxyPtr inClientProxy );&#xa;- void	WriteLastMoveTimestampIfDirty( OutputMemoryBitStream&amp; inOutputStream, ClientProxyPtr inClientProxy );&#xa;- void	HandleInputPacket( ClientProxyPtr inClientProxy, InputMemoryBitStream&amp; inInputStream );&#xa;- void	HandleClientDisconnected( ClientProxyPtr inClientProxy );&#xa;- int		GetNewNetworkId();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-32">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-35" value="+ static bool    StaticInit( uint16_t inPort );&#xa;+ virtual void   ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) override;&#xa;+ virtual void   HandleConnectionReset( const SocketAddress&amp; inFromAddress ) override;&#xa;+ void   SendOutgoingPackets();&#xa;+ void   CheckForDisconnects();&#xa;+ void   RegisterGameObject( GameObjectPtr inGameObject );&#xa;+ inline GameObjectPtr RegisterAndReturn( GameObject* inGameObject );&#xa;+ void   UnregisterGameObject( GameObject* inGameObject );&#xa;+ void   SetStateDirty( int inNetworkId, uint32_t inDirtyState );&#xa;+ void   RespawnCats();&#xa;+ ClientProxyPtr GetClientProxy( int inPlayerId ) const;&#xa;&#xa;- NetworkManagerServer();&#xa;- void HandlePacketFromNewClient( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress );&#xa;- void ProcessPacket( ClientProxyPtr inClientProxy, InputMemoryBitStream&amp; inInputStream );&#xa;- void SendWelcomePacket( ClientProxyPtr inClientProxy );&#xa;- void UpdateAllClients();&#xa;- void AddWorldStateToPacket( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void AddScoreBoardStateToPacket( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void SendStatePacketToClient( ClientProxyPtr inClientProxy );&#xa;- void WriteLastMoveTimestampIfDirty( OutputMemoryBitStream&amp; inOutputStream, ClientProxyPtr inClientProxy );&#xa;- void HandleInputPacket( ClientProxyPtr inClientProxy, InputMemoryBitStream&amp; inInputStream );&#xa;- void HandleClientDisconnected( ClientProxyPtr inClientProxy );&#xa;- int  GetNewNetworkId();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-32" vertex="1">
           <mxGeometry y="198" width="650" height="362" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-36" value="NetworkManager&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-36" value="NetworkManager&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="1535.5" y="-700" width="650" height="500" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-37" value="+ static const uint32_t kHelloCC = &#39;HELO&#39;;&#xa;+ static const uint32_t kWelcomeCC = &#39;WLCM&#39;;&#xa;+ static const uint32_t kStateCC = &#39;STAT&#39;;&#xa;+ static const uint32_t kInputCC = &#39;INPT&#39;;&#xa;+ static const int  kMaxPacketsPerFrameCount = 10;&#xa;typedef unordered_map&lt; int, GameObjectPtr &gt; IntToGameObjectMap;&#xa;# IntToGameObjectMap  mNetworkIdToGameObjectMap;&#xa;&#xa;- queue&lt; ReceivedPacket, list&lt; ReceivedPacket &gt; &gt; mPacketQueue;&#xa;- UDPSocketPtr mSocket;&#xa;模拟延迟丢包相关&#xa;- WeightedTimedMovingAverage mBytesReceivedPerSecond;&#xa;- WeightedTimedMovingAverage mBytesSentPerSecond;&#xa;- int       mBytesSentThisFrame;&#xa;- float      mDropPacketChance;&#xa;- float      mSimulatedLatency;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-36">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-37" value="+ static const uint32_t kHelloCC = &#39;HELO&#39;;&#xa;+ static const uint32_t kWelcomeCC = &#39;WLCM&#39;;&#xa;+ static const uint32_t kStateCC = &#39;STAT&#39;;&#xa;+ static const uint32_t kInputCC = &#39;INPT&#39;;&#xa;+ static const int  kMaxPacketsPerFrameCount = 10;&#xa;typedef unordered_map&lt; int, GameObjectPtr &gt; IntToGameObjectMap;&#xa;# IntToGameObjectMap  mNetworkIdToGameObjectMap;&#xa;&#xa;- queue&lt; ReceivedPacket, list&lt; ReceivedPacket &gt; &gt; mPacketQueue;&#xa;- UDPSocketPtr mSocket;&#xa;模拟延迟丢包相关&#xa;- WeightedTimedMovingAverage mBytesReceivedPerSecond;&#xa;- WeightedTimedMovingAverage mBytesSentPerSecond;&#xa;- int       mBytesSentThisFrame;&#xa;- float      mDropPacketChance;&#xa;- float      mSimulatedLatency;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-36" vertex="1">
           <mxGeometry y="26" width="650" height="244" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-36">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-36" vertex="1">
           <mxGeometry y="270" width="650" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-39" value="+ bool Init( uint16_t inPort ); &#xa;+ void ProcessIncomingPackets();&#xa;+ virtual void ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) = 0;&#xa;+ virtual void HandleConnectionReset( const SocketAddress&amp; inFromAddress );&#xa;+ void SendPacket( const OutputMemoryBitStream&amp; inOutputStream, const SocketAddress&amp; inFromAddress );&#xa;+ inline GameObjectPtr GetGameObject( int inNetworkId ) const;&#xa;+ void AddToNetworkIdToGameObjectMap( GameObjectPtr inGameObject );&#xa;+ void RemoveFromNetworkIdToGameObjectMap( GameObjectPtr inGameObject );&#xa;模拟延迟丢包相关&#xa;+ const WeightedTimedMovingAverage&amp; GetBytesReceivedPerSecond() const;&#xa;+ const WeightedTimedMovingAverage&amp; GetBytesSentPerSecond()  const;&#xa;+ void SetDropPacketChance( float inChance );&#xa;+ void SetSimulatedLatency( float inLatency );&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-36">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-39" value="+ bool Init( uint16_t inPort ); &#xa;+ void ProcessIncomingPackets();&#xa;+ virtual void ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) = 0;&#xa;+ virtual void HandleConnectionReset( const SocketAddress&amp; inFromAddress );&#xa;+ void SendPacket( const OutputMemoryBitStream&amp; inOutputStream, const SocketAddress&amp; inFromAddress );&#xa;+ inline GameObjectPtr GetGameObject( int inNetworkId ) const;&#xa;+ void AddToNetworkIdToGameObjectMap( GameObjectPtr inGameObject );&#xa;+ void RemoveFromNetworkIdToGameObjectMap( GameObjectPtr inGameObject );&#xa;模拟延迟丢包相关&#xa;+ const WeightedTimedMovingAverage&amp; GetBytesReceivedPerSecond() const;&#xa;+ const WeightedTimedMovingAverage&amp; GetBytesSentPerSecond()  const;&#xa;+ void SetDropPacketChance( float inChance );&#xa;+ void SetSimulatedLatency( float inLatency );&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-36" vertex="1">
           <mxGeometry y="278" width="650" height="222" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-40" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.425;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-32" target="C9IEF28Jtl-8NMZRrq5K-39">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-40" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.425;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-32" target="C9IEF28Jtl-8NMZRrq5K-39" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2153" y="690" as="sourcePoint" />
             <mxPoint x="2053" y="640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-41" value="" style="endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;exitX=1.003;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-39" target="C9IEF28Jtl-8NMZRrq5K-43">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-41" value="" style="endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;exitX=1.003;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-39" target="C9IEF28Jtl-8NMZRrq5K-43" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2255.5" y="-430" as="sourcePoint" />
             <mxPoint x="2315.5" y="-410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-42" value="ReceivedPacket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-42" value="ReceivedPacket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="2275.5" y="-480" width="260" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-43" value="- float     mReceivedTime;&#xa;- InputMemoryBitStream mPacketBuffer;&#xa;- SocketAddress   mFromAddress;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-42">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-43" value="- float     mReceivedTime;&#xa;- InputMemoryBitStream mPacketBuffer;&#xa;- SocketAddress   mFromAddress;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-42" vertex="1">
           <mxGeometry y="26" width="260" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-44" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-42">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-44" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-42" vertex="1">
           <mxGeometry y="80" width="260" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-45" value="+ const SocketAddress&amp;   GetFromAddress() const &#xa;+ float     GetReceivedTime() const &#xa;+ InputMemoryBitStream&amp; GetPacketBuffer()   &#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-42">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-45" value="+ const SocketAddress&amp;   GetFromAddress() const &#xa;+ float     GetReceivedTime() const &#xa;+ InputMemoryBitStream&amp; GetPacketBuffer()   &#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-42" vertex="1">
           <mxGeometry y="88" width="260" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-46" value="ClientProxy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
-          <mxGeometry x="2720" y="-49" width="530" height="430" as="geometry" />
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-46" value="ClientProxy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
+          <mxGeometry x="2670" y="1610" width="530" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-47" value="- DeliveryNotificationManager	mDeliveryNotificationManager;&#xa;- ReplicationManagerServer	mReplicationManagerServer;&#xa;- SocketAddress	mSocketAddress;&#xa;- string			mName;&#xa;- int				mPlayerId;&#xa;- InputState		mInputState;&#xa;- float			mLastPacketFromClientTime;&#xa;- float			mTimeToRespawn;&#xa;- MoveList		mUnprocessedMoveList;&#xa;- bool			mIsLastMoveTimestampDirty;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-46">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-47" value="- DeliveryNotificationManager mDeliveryNotificationManager;&#xa;- ReplicationManagerServer mReplicationManagerServer;&#xa;- SocketAddress mSocketAddress;&#xa;- string   mName;&#xa;- int    mPlayerId;&#xa;- InputState  mInputState;&#xa;- float   mLastPacketFromClientTime;&#xa;- float   mTimeToRespawn;&#xa;- MoveList  mUnprocessedMoveList;&#xa;- bool   mIsLastMoveTimestampDirty;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-46" vertex="1">
           <mxGeometry y="26" width="530" height="154" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-46">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-46" vertex="1">
           <mxGeometry y="180" width="530" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-49" value="+ ClientProxy( const SocketAddress&amp; inSocketAddress, const string&amp; inName, int inPlayerId );&#xa;+ const	SocketAddress&amp;	GetSocketAddress()	const;&#xa;+ int				GetPlayerId()		const;&#xa;+ const	string&amp;		GetName()			const;&#xa;+ void			SetInputState( const InputState&amp; inInputState );&#xa;+ const	InputState&amp;		GetInputState()		const; + void			UpdateLastPacketTime(); &#xa;+ float			GetLastPacketFromClientTime()	const;&#xa;+ DeliveryNotificationManager&amp;	GetDeliveryNotificationManager();&#xa;+ ReplicationManagerServer&amp;		GetReplicationManagerServer();&#xa;+ const	MoveList&amp;				GetUnprocessedMoveList() const	&#xa;+ MoveList&amp;				GetUnprocessedMoveList()&#xa;+ void	SetIsLastMoveTimestampDirty( bool inIsDirty )			&#xa;+ bool	IsLastMoveTimestampDirty()						const&#xa;+ void	HandleCatDied();&#xa;+ void	RespawnCatIfNecessary();&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-46">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-49" value="+ ClientProxy( const SocketAddress&amp; inSocketAddress, const string&amp; inName, int inPlayerId );&#xa;+ const SocketAddress&amp; GetSocketAddress() const;&#xa;+ int    GetPlayerId()  const;&#xa;+ const string&amp;  GetName()   const;&#xa;+ void   SetInputState( const InputState&amp; inInputState );&#xa;+ const InputState&amp;  GetInputState()  const; + void   UpdateLastPacketTime(); &#xa;+ float   GetLastPacketFromClientTime() const;&#xa;+ DeliveryNotificationManager&amp; GetDeliveryNotificationManager();&#xa;+ ReplicationManagerServer&amp;  GetReplicationManagerServer();&#xa;+ const MoveList&amp;    GetUnprocessedMoveList() const &#xa;+ MoveList&amp;    GetUnprocessedMoveList()&#xa;+ void SetIsLastMoveTimestampDirty( bool inIsDirty )   &#xa;+ bool IsLastMoveTimestampDirty()      const&#xa;+ void HandleCatDied();&#xa;+ void RespawnCatIfNecessary();&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="C9IEF28Jtl-8NMZRrq5K-46" vertex="1">
           <mxGeometry y="188" width="530" height="242" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-50" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-47" target="C9IEF28Jtl-8NMZRrq5K-33">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-50" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-47" target="C9IEF28Jtl-8NMZRrq5K-33" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2250" y="70" as="sourcePoint" />
             <mxPoint x="2410" y="70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-51" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-10" target="C9IEF28Jtl-8NMZRrq5K-37">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-51" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-10" target="C9IEF28Jtl-8NMZRrq5K-37" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1435.5" y="-740" as="sourcePoint" />
             <mxPoint x="1595.5" y="-740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-52" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.215;exitY=1.014;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-3" target="C9IEF28Jtl-8NMZRrq5K-46">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-52" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.215;exitY=1.014;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-3" target="C9IEF28Jtl-8NMZRrq5K-46" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="2780" y="-265" as="sourcePoint" />
-            <mxPoint x="2790" y="-150" as="targetPoint" />
+            <mxPoint x="3150" y="1415" as="sourcePoint" />
+            <mxPoint x="3160" y="1530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ndQVdPlZv9h6ukCjv5cU-0" value="ReplicationManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
-          <mxGeometry x="3300" y="-600" width="650" height="250" as="geometry" />
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-0" value="ReplicationManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
+          <mxGeometry x="2481" y="830" width="650" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="ndQVdPlZv9h6ukCjv5cU-1" value="- unordered_map&lt; int, ReplicationCommand &gt;	mNetworkIdToReplicationCommand;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ndQVdPlZv9h6ukCjv5cU-0">
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-1" value="- unordered_map&lt; int, ReplicationCommand &gt; mNetworkIdToReplicationCommand;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ndQVdPlZv9h6ukCjv5cU-0" vertex="1">
           <mxGeometry y="26" width="650" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="ndQVdPlZv9h6ukCjv5cU-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ndQVdPlZv9h6ukCjv5cU-0">
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="ndQVdPlZv9h6ukCjv5cU-0" vertex="1">
           <mxGeometry y="52" width="650" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="ndQVdPlZv9h6ukCjv5cU-3" value="+ void ReplicateCreate( int inNetworkId, uint32_t inInitialDirtyState );&#xa;+ void ReplicateDestroy( int inNetworkId );&#xa;+ void SetStateDirty( int inNetworkId, uint32_t inDirtyState );&#xa;+ void HandleCreateAckd( int inNetworkId );&#xa;+ void RemoveFromReplication( int inNetworkId );&#xa;+ void Write( OutputMemoryBitStream&amp; inOutputStream, ReplicationManagerTransmissionData* ioTransmissinData );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ndQVdPlZv9h6ukCjv5cU-0">
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-3" value="+ void ReplicateCreate( int inNetworkId, uint32_t inInitialDirtyState );&#xa;+ void ReplicateDestroy( int inNetworkId );&#xa;+ void SetStateDirty( int inNetworkId, uint32_t inDirtyState );&#xa;+ void HandleCreateAckd( int inNetworkId );&#xa;+ void RemoveFromReplication( int inNetworkId );&#xa;+ void Write( OutputMemoryBitStream&amp; inOutputStream, ReplicationManagerTransmissionData* ioTransmissinData );&#xa;&#xa;- uint32_t WriteCreateAction( OutputMemoryBitStream&amp; inOutputStream, int inNetworkId, uint32_t inDirtyState );&#xa;- uint32_t WriteUpdateAction( OutputMemoryBitStream&amp; inOutputStream, int inNetworkId, uint32_t inDirtyState );&#xa;- uint32_t WriteDestroyAction( OutputMemoryBitStream&amp; inOutputStream, int inNetworkId, uint32_t inDirtyState );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ndQVdPlZv9h6ukCjv5cU-0" vertex="1">
           <mxGeometry y="60" width="650" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="ndQVdPlZv9h6ukCjv5cU-4" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.478;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="ndQVdPlZv9h6ukCjv5cU-3" target="C9IEF28Jtl-8NMZRrq5K-46">
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-4" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.478;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="ndQVdPlZv9h6ukCjv5cU-3" target="C9IEF28Jtl-8NMZRrq5K-46" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3300" y="-268.0799999999999" as="sourcePoint" />
-            <mxPoint x="3388.55" y="-39" as="targetPoint" />
+            <mxPoint x="3670" y="1411.92" as="sourcePoint" />
+            <mxPoint x="3758.55" y="1641" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1dWziYokNj-31NhukmnD-0" value="InFlightPacket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+          <mxGeometry x="2990" y="470" width="540" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="1dWziYokNj-31NhukmnD-1" value="- PacketSequenceNumber	mSequenceNumber;&#xa;- float			mTimeDispatched;&#xa;- unordered_map&lt; int, TransmissionDataPtr &gt;	mTransmissionDataMap;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1dWziYokNj-31NhukmnD-0">
+          <mxGeometry y="26" width="540" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="1dWziYokNj-31NhukmnD-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="1dWziYokNj-31NhukmnD-0">
+          <mxGeometry y="90" width="540" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1dWziYokNj-31NhukmnD-3" value="+ InFlightPacket( PacketSequenceNumber inSequenceNumber );&#xa;+ PacketSequenceNumber GetSequenceNumber() const;&#xa;+ float				 GetTimeDispatched() const;&#xa;+ void 				 SetTransmissionData( int inKey, TransmissionDataPtr	inTransmissionData );&#xa;+ const TransmissionDataPtr GetTransmissionData( int inKey ) const;&#xa;+ void			HandleDeliveryFailure( DeliveryNotificationManager* inDeliveryNotificationManager ) const;&#xa;+ void			HandleDeliverySuccess( DeliveryNotificationManager* inDeliveryNotificationManager ) const;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1dWziYokNj-31NhukmnD-0">
+          <mxGeometry y="98" width="540" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="1dWziYokNj-31NhukmnD-4" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.458;exitY=1.023;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="1dWziYokNj-31NhukmnD-3" target="C9IEF28Jtl-8NMZRrq5K-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="3690" y="710" as="sourcePoint" />
+            <mxPoint x="3850" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-0" value="AckRange" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+          <mxGeometry x="3700" y="470" width="540" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-1" value="- PacketSequenceNumber	mStart;&#xa;- uint32_t		mCount;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-0">
+          <mxGeometry y="26" width="540" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-0">
+          <mxGeometry y="70" width="540" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-3" value="+ AckRange() : mStart( 0 ), mCount( 0 );&#xa;+ AckRange( PacketSequenceNumber inStart ) : mStart( inStart ), mCount( 1 ) ;&#xa;+ inline bool ExtendIfShould( PacketSequenceNumber inSequenceNumber );&#xa;+ PacketSequenceNumber	GetStart() const;&#xa;+ uint32_t		GetCount() const;&#xa;+ void Write( OutputMemoryBitStream&amp; inOutputStream ) const;&#xa;+ void Read( InputMemoryBitStream&amp; inInputStream );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-0">
+          <mxGeometry y="78" width="540" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-4" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.457;exitY=1.027;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="CkRn_AErBvkyxASZdcLH-3" target="C9IEF28Jtl-8NMZRrq5K-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="3940" y="569.9960000000001" as="sourcePoint" />
+            <mxPoint x="4203.12" y="826.96" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-5" value="TransmissionData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+          <mxGeometry x="2990" y="-170" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-5">
+          <mxGeometry y="26" width="600" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-8" value="+ virtual void HandleDeliveryFailure( DeliveryNotificationManager* inDeliveryNotificationManager ) const = 0;&#xa;+ virtual void HandleDeliverySuccess( DeliveryNotificationManager* inDeliveryNotificationManager ) const = 0;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-5">
+          <mxGeometry y="34" width="600" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-9" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.892;exitY=1.043;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="CkRn_AErBvkyxASZdcLH-8" target="1dWziYokNj-31NhukmnD-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="3170" y="70" as="sourcePoint" />
+            <mxPoint x="3135.18" y="296.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-12" value="" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.132;entryY=1.065;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="CkRn_AErBvkyxASZdcLH-13" target="CkRn_AErBvkyxASZdcLH-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2970" y="80" as="sourcePoint" />
+            <mxPoint x="2994.86" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-13" value="ReplicationManagerTransmissionData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+          <mxGeometry x="2679" y="170" width="771" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-14" value="- ReplicationManagerServer*	mReplicationManagerServer;&#xa;- vector&lt; ReplicationTransmission &gt;		mTransmissions;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-13">
+          <mxGeometry y="26" width="771" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-13">
+          <mxGeometry y="70" width="771" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-16" value="+ ReplicationManagerTransmissionData( ReplicationManagerServer* inReplicationManagerServer );&#xa;+ void AddTransmission( int inNetworkId, ReplicationAction inAction, uint32_t inState );&#xa;+ virtual void HandleDeliveryFailure( DeliveryNotificationManager* inDeliveryNotificationManager ) const override;&#xa;+ virtual void HandleDeliverySuccess( DeliveryNotificationManager* inDeliveryNotificationManager ) const override;&#xa;+ void HandleCreateDeliveryFailure( int inNetworkId ) const;&#xa;+ void HandleUpdateStateDeliveryFailure( int inNetworkId, uint32_t inState, DeliveryNotificationManager* inDeliveryNotificationManager ) const;&#xa;+ void HandleDestroyDeliveryFailure( int inNetworkId ) const;&#xa;+ void HandleCreateDeliverySuccess( int inNetworkId ) const;&#xa;+ void HandleDestroyDeliverySuccess( int inNetworkId ) const;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-13">
+          <mxGeometry y="78" width="771" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-17" value="" style="endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="CkRn_AErBvkyxASZdcLH-14" target="CkRn_AErBvkyxASZdcLH-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2979" y="225.05200000000013" as="sourcePoint" />
+            <mxPoint x="3059" y="204" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-18" value="ReplicationTransmission" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+          <mxGeometry x="2130" y="180" width="490" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-19" value="- int							mNetworkId;&#xa;- ReplicationAction		mAction;&#xa;- uint32_t					mState;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-18">
+          <mxGeometry y="26" width="490" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-18">
+          <mxGeometry y="80" width="490" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-21" value="+ ReplicationTransmission( int inNetworkId, ReplicationAction inAction, uint32_t inState );&#xa;+ int							GetNetworkId()		const;&#xa;+ ReplicationAction		GetAction()			const;&#xa;+ uint32_t					GetState()			const;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CkRn_AErBvkyxASZdcLH-18">
+          <mxGeometry y="88" width="490" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="CkRn_AErBvkyxASZdcLH-22" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.144;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.483;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="CkRn_AErBvkyxASZdcLH-16" target="ndQVdPlZv9h6ukCjv5cU-0">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2330" y="590" as="sourcePoint" />
+            <mxPoint x="2490" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
