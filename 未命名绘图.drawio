@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T01:04:33.677Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="Gj1H7heA9gNWTz7_RutG" version="14.4.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-15T01:25:34.505Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="zbfIycM3FnWFgxn6yGM-" version="14.4.7" type="github" pages="2">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
     <mxGraphModel dx="5567" dy="2540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -512,23 +512,23 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fcJS_M9sNya6CtINCrLa" name="第 2 页">
-    <mxGraphModel dx="4740" dy="4878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="3100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-0" />
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-1" parent="oc5jsSyHZVvdx0_5WuaF-0" />
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-0" value="DeliveryNotificationManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
-          <mxGeometry x="3040" y="-270" width="530" height="420" as="geometry">
+          <mxGeometry x="2650" y="-860" width="530" height="578" as="geometry">
             <mxRectangle x="110" y="260" width="190" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-1" value="作为发送端需要的数据成员：&#xa;- PacketSequenceNumber mNextOutgoingSequenceNumber;&#xa;- deque&lt; InFlightPacket &gt; mInFlightPackets;&#xa;- uint32_t  mDeliveredPacketCount;&#xa;&#xa;&#xa;作为接收端需要的数据成员：&#xa;- mPendingAcks: deque&lt; AckRange &gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
-          <mxGeometry y="26" width="530" height="134" as="geometry" />
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-1" value="作为发送端需要的数据成员：&#xa;- PacketSequenceNumber mNextOutgoingSequenceNumber;&#xa;- deque&lt; InFlightPacket &gt; mInFlightPackets;&#xa;- uint32_t  mDeliveredPacketCount;&#xa;- PacketSequenceNumber	mNextOutgoingSequenceNumber;&#xa;&#xa;作为接收端需要的数据成员：&#xa;- mPendingAcks: deque&lt; AckRange &gt;&#xa;- PacketSequenceNumber	mNextExpectedSequenceNumber;&#xa;&#xa;统计需要：&#xa;- uint32_t		mDeliveredPacketCount;&#xa;- uint32_t		mDroppedPacketCount;&#xa;- uint32_t		mDispatchedPacketCount;&#xa;&#xa;- bool					mShouldSendAcks;&#xa;- bool					mShouldProcessAcks;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
+          <mxGeometry y="26" width="530" height="264" as="geometry" />
         </mxCell>
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
-          <mxGeometry y="160" width="530" height="8" as="geometry" />
+          <mxGeometry y="290" width="530" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-3" value="作为发送端需要的方法：&#xa;- InFlightPacket*  WriteSequenceNumber( OutputMemoryBitStream&amp; inOutputStream );&#xa;&#xa;&#xa;&#xa;&#xa;作为接收端需要的方法：&#xa;- void    HandlePacketDeliveryFailure( const InFlightPacket&amp; inFlightPacket );&#xa;- void HandlePacketDeliverySuccess( const InFlightPacket&amp; inFlightPacket );&#xa;&#xa;&#xa;&#xa;&#xa;a" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
-          <mxGeometry y="168" width="530" height="252" as="geometry" />
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-3" value="+ DeliveryNotificationManager( bool inShouldSendAcks, bool inShouldProcessAcks );&#xa;+ ~DeliveryNotificationManager();&#xa;+ void				ProcessTimedOutPackets();&#xa;+ uint32_t			GetDroppedPacketCount()		const;&#xa;+ uint32_t			GetDeliveredPacketCount()	const;&#xa;+ uint32_t			GetDispatchedPacketCount()	const;+ const deque&lt; InFlightPacket &gt;&amp;	GetInFlightPackets()	const;&#xa;&#xa;作为发送端需要的方法：&#xa;+ inline	InFlightPacket*		WriteState( OutputMemoryBitStream&amp; inOutputStream );&#xa;- InFlightPacket*  WriteSequenceNumber( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void				WriteAckData( OutputMemoryBitStream&amp; inOutputStream );&#xa;&#xa;作为接收端需要的方法：&#xa;+ inline	bool				ReadAndProcessState( InputMemoryBitStream&amp; inInputStream );&#xa;- void    HandlePacketDeliveryFailure( const InFlightPacket&amp; inFlightPacket );&#xa;- void HandlePacketDeliverySuccess( const InFlightPacket&amp; inFlightPacket );&#xa;- bool				ProcessSequenceNumber( InputMemoryBitStream&amp; inInputStream );&#xa;- void				ProcessAcks( InputMemoryBitStream&amp; inInputStream );&#xa;- void				AddPendingAck( PacketSequenceNumber inSequenceNumber );&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-0">
+          <mxGeometry y="298" width="530" height="280" as="geometry" />
         </mxCell>
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-4" value="Engine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
           <mxGeometry x="1039.5" y="-1050" width="340" height="220" as="geometry" />
@@ -551,7 +551,7 @@
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-10" value="+ static bool StaticInit();&#xa;+ virtual void DoFrame() override;&#xa;+ virtual int Run();&#xa;+ void HandleNewClient( ClientProxyPtr inClientProxy );&#xa;+ void HandleLostClient( ClientProxyPtr inClientProxy );&#xa;+ RoboCatPtr GetCatForPlayer( int inPlayerId );&#xa;+ void SpawnCatForPlayer( int inPlayerId );&#xa;&#xa;- Server();&#xa;- void SetupWorld();&#xa;- bool InitNetworkManager();&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-8">
           <mxGeometry y="34" width="410" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-11" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.441;entryY=1.098;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-8" target="C9IEF28Jtl-8NMZRrq5K-7">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-11" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.454;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-8" target="C9IEF28Jtl-8NMZRrq5K-7">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1104.5" y="-451" as="sourcePoint" />
             <mxPoint x="1264.5" y="-451" as="targetPoint" />
@@ -680,7 +680,7 @@
           <mxGeometry y="88" width="260" height="62" as="geometry" />
         </mxCell>
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-46" value="ClientProxy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
-          <mxGeometry x="2330" y="-49" width="530" height="430" as="geometry" />
+          <mxGeometry x="2720" y="-49" width="530" height="430" as="geometry" />
         </mxCell>
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-47" value="- DeliveryNotificationManager	mDeliveryNotificationManager;&#xa;- ReplicationManagerServer	mReplicationManagerServer;&#xa;- SocketAddress	mSocketAddress;&#xa;- string			mName;&#xa;- int				mPlayerId;&#xa;- InputState		mInputState;&#xa;- float			mLastPacketFromClientTime;&#xa;- float			mTimeToRespawn;&#xa;- MoveList		mUnprocessedMoveList;&#xa;- bool			mIsLastMoveTimestampDirty;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C9IEF28Jtl-8NMZRrq5K-46">
           <mxGeometry y="26" width="530" height="154" as="geometry" />
@@ -703,10 +703,28 @@
             <mxPoint x="1595.5" y="-740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C9IEF28Jtl-8NMZRrq5K-52" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.001;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-3" target="C9IEF28Jtl-8NMZRrq5K-47">
+        <mxCell id="C9IEF28Jtl-8NMZRrq5K-52" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.215;exitY=1.014;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="C9IEF28Jtl-8NMZRrq5K-3" target="C9IEF28Jtl-8NMZRrq5K-46">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2780" y="-265" as="sourcePoint" />
-            <mxPoint x="2960" y="5" as="targetPoint" />
+            <mxPoint x="2790" y="-150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-0" value="ReplicationManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+          <mxGeometry x="3300" y="-600" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-1" value="- unordered_map&lt; int, ReplicationCommand &gt;	mNetworkIdToReplicationCommand;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ndQVdPlZv9h6ukCjv5cU-0">
+          <mxGeometry y="26" width="650" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ndQVdPlZv9h6ukCjv5cU-0">
+          <mxGeometry y="52" width="650" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-3" value="+ void ReplicateCreate( int inNetworkId, uint32_t inInitialDirtyState );&#xa;+ void ReplicateDestroy( int inNetworkId );&#xa;+ void SetStateDirty( int inNetworkId, uint32_t inDirtyState );&#xa;+ void HandleCreateAckd( int inNetworkId );&#xa;+ void RemoveFromReplication( int inNetworkId );&#xa;+ void Write( OutputMemoryBitStream&amp; inOutputStream, ReplicationManagerTransmissionData* ioTransmissinData );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ndQVdPlZv9h6ukCjv5cU-0">
+          <mxGeometry y="60" width="650" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ndQVdPlZv9h6ukCjv5cU-4" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.478;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="ndQVdPlZv9h6ukCjv5cU-3" target="C9IEF28Jtl-8NMZRrq5K-46">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="3300" y="-268.0799999999999" as="sourcePoint" />
+            <mxPoint x="3388.55" y="-39" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
