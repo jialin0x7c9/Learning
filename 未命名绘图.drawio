@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-21T15:34:38.665Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="G6Vg0QKDpiw-8IZz9qD3" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-22T01:28:54.825Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="8zvJM5vHT_krVS2F0VQH" version="14.4.9" type="github" pages="2">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
-    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2500" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -502,8 +502,8 @@
         <mxCell id="PdD96DAcnEqBJffwbTBB-12" value="&lt;b style=&quot;font-size: 15px&quot;&gt;ReplicationManager&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EA6B66;" parent="1" vertex="1">
           <mxGeometry x="-228.5" y="3840" width="239.25" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="PdD96DAcnEqBJffwbTBB-16" value="本地玩家看其他玩家：航位推测" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="329.25" y="3790" width="382.25" height="70" as="geometry" />
+        <mxCell id="PdD96DAcnEqBJffwbTBB-16" value="本地玩家看其他玩家：航位推测、遇到不一致则有3种办法更正" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="329.25" y="3790" width="680.75" height="70" as="geometry" />
         </mxCell>
         <mxCell id="PdD96DAcnEqBJffwbTBB-17" value="客户端如何估算RTT时间" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
           <mxGeometry x="318.88" y="3560" width="382.25" height="70" as="geometry" />
@@ -745,7 +745,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fcJS_M9sNya6CtINCrLa" name="第 2 页">
-    <mxGraphModel dx="4890" dy="4515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="3100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-0" />
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-1" parent="oc5jsSyHZVvdx0_5WuaF-0" />
@@ -1152,25 +1152,25 @@
             <mxPoint x="100" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="In3Y3eftPwYxF-sZfUyY-0" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.075;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" target="C9IEF28Jtl-8NMZRrq5K-39" edge="1" source="a0LlbO24cJSH4Ted1A2a-0">
+        <mxCell id="In3Y3eftPwYxF-sZfUyY-0" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.075;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="a0LlbO24cJSH4Ted1A2a-0" target="C9IEF28Jtl-8NMZRrq5K-39" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1923.25" y="118.44999999999953" as="sourcePoint" />
             <mxPoint x="1910" y="-599.9959999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="a0LlbO24cJSH4Ted1A2a-0" value="NetworkManagerClient" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="a0LlbO24cJSH4Ted1A2a-0" value="NetworkManagerClient" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="1490" y="-80" width="700" height="580" as="geometry" />
         </mxCell>
-        <mxCell id="a0LlbO24cJSH4Ted1A2a-1" value="enum NetworkClientState&#xa;	{&#xa;		NCS_Uninitialized,&#xa;		NCS_SayingHello,&#xa;		NCS_Welcomed&#xa;	};+ static NetworkManagerClient*	sInstance;&#xa;- DeliveryNotificationManager	mDeliveryNotificationManager;&#xa;- ReplicationManagerClient	mReplicationManagerClient;&#xa;- SocketAddress		mServerAddress;&#xa;- NetworkClientState	mState;&#xa;- float				mTimeOfLastHello;&#xa;- float				mTimeOfLastInputPacket;&#xa;- string				mName;&#xa;- int					mPlayerId;&#xa;- float				mLastMoveProcessedByServerTimestamp;&#xa;- WeightedTimedMovingAverage	mAvgRoundTripTime;&#xa;- float						mLastRoundTripTime;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="a0LlbO24cJSH4Ted1A2a-0">
+        <mxCell id="a0LlbO24cJSH4Ted1A2a-1" value="enum NetworkClientState&#xa; {&#xa;  NCS_Uninitialized,&#xa;  NCS_SayingHello,&#xa;  NCS_Welcomed&#xa; };+ static NetworkManagerClient* sInstance;&#xa;- DeliveryNotificationManager mDeliveryNotificationManager;&#xa;- ReplicationManagerClient mReplicationManagerClient;&#xa;- SocketAddress  mServerAddress;&#xa;- NetworkClientState mState;&#xa;- float    mTimeOfLastHello;&#xa;- float    mTimeOfLastInputPacket;&#xa;- string    mName;&#xa;- int     mPlayerId;&#xa;- float    mLastMoveProcessedByServerTimestamp;&#xa;- WeightedTimedMovingAverage mAvgRoundTripTime;&#xa;- float      mLastRoundTripTime;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="a0LlbO24cJSH4Ted1A2a-0" vertex="1">
           <mxGeometry y="26" width="700" height="254" as="geometry" />
         </mxCell>
-        <mxCell id="a0LlbO24cJSH4Ted1A2a-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="a0LlbO24cJSH4Ted1A2a-0">
+        <mxCell id="a0LlbO24cJSH4Ted1A2a-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="a0LlbO24cJSH4Ted1A2a-0" vertex="1">
           <mxGeometry y="280" width="700" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="a0LlbO24cJSH4Ted1A2a-3" value="+ static	void	StaticInit( const SocketAddress&amp; inServerAddress, const string&amp; inName );&#xa;+ void	SendOutgoingPackets();&#xa;+ virtual void	ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) override;&#xa;+ const	WeightedTimedMovingAverage&amp;		GetAvgRoundTripTime()	const;&#xa;+ float									GetRoundTripTime()		const;&#xa;+ int		GetPlayerId()											const;&#xa;+ float	GetLastMoveProcessedByServerTimestamp()					const;&#xa;- NetworkManagerClient();&#xa;- void Init( const SocketAddress&amp; inServerAddress, const string&amp; inName );&#xa;- void	UpdateSayingHello();&#xa;- void	SendHelloPacket();&#xa;- void	HandleWelcomePacket( InputMemoryBitStream&amp; inInputStream );&#xa;- void	HandleStatePacket( InputMemoryBitStream&amp; inInputStream );&#xa;- void	ReadLastMoveProcessedOnServerTimestamp( InputMemoryBitStream&amp; inInputStream );&#xa;- void	HandleGameObjectState( InputMemoryBitStream&amp; inInputStream );&#xa;- void	HandleScoreBoardState( InputMemoryBitStream&amp; inInputStream );&#xa;- void	UpdateSendingInputPacket();&#xa;- void	SendInputPacket();&#xa;- void	DestroyGameObjectsInMap( const IntToGameObjectMap&amp; inObjectsToDestroy );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="a0LlbO24cJSH4Ted1A2a-0">
+        <mxCell id="a0LlbO24cJSH4Ted1A2a-3" value="+ static void StaticInit( const SocketAddress&amp; inServerAddress, const string&amp; inName );&#xa;+ void SendOutgoingPackets();&#xa;+ virtual void ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) override;&#xa;+ const WeightedTimedMovingAverage&amp;  GetAvgRoundTripTime() const;&#xa;+ float         GetRoundTripTime()  const;&#xa;+ int  GetPlayerId()           const;&#xa;+ float GetLastMoveProcessedByServerTimestamp()     const;&#xa;- NetworkManagerClient();&#xa;- void Init( const SocketAddress&amp; inServerAddress, const string&amp; inName );&#xa;- void UpdateSayingHello();&#xa;- void SendHelloPacket();&#xa;- void HandleWelcomePacket( InputMemoryBitStream&amp; inInputStream );&#xa;- void HandleStatePacket( InputMemoryBitStream&amp; inInputStream );&#xa;- void ReadLastMoveProcessedOnServerTimestamp( InputMemoryBitStream&amp; inInputStream );&#xa;- void HandleGameObjectState( InputMemoryBitStream&amp; inInputStream );&#xa;- void HandleScoreBoardState( InputMemoryBitStream&amp; inInputStream );&#xa;- void UpdateSendingInputPacket();&#xa;- void SendInputPacket();&#xa;- void DestroyGameObjectsInMap( const IntToGameObjectMap&amp; inObjectsToDestroy );" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="a0LlbO24cJSH4Ted1A2a-0" vertex="1">
           <mxGeometry y="288" width="700" height="292" as="geometry" />
         </mxCell>
-        <mxCell id="a0LlbO24cJSH4Ted1A2a-5" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oc5jsSyHZVvdx0_5WuaF-1" source="a0LlbO24cJSH4Ted1A2a-1" target="gtiYdr-fBOu4iRndQMee-3">
+        <mxCell id="a0LlbO24cJSH4Ted1A2a-5" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="oc5jsSyHZVvdx0_5WuaF-1" source="a0LlbO24cJSH4Ted1A2a-1" target="gtiYdr-fBOu4iRndQMee-3" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1130" y="30" as="sourcePoint" />
             <mxPoint x="1070" y="-340" as="targetPoint" />
