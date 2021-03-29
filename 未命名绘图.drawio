@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-29T00:17:16.813Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="6HPaQWZOYZvDPkW9xmiV" version="14.5.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-29T01:39:05.596Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="cwOfyEdZHLYQw166f0e4" version="14.5.1" type="github" pages="3">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
-    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3197" dy="1270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -860,7 +860,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fcJS_M9sNya6CtINCrLa" name="第 2 页">
-    <mxGraphModel dx="6394" dy="3522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2839" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-0" />
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-1" parent="oc5jsSyHZVvdx0_5WuaF-0" />
@@ -1070,7 +1070,7 @@
             <mxPoint x="330" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GBdxDm6_3jsFwyOYm7Gt-3" value="网络模块" style="swimlane;fontSize=50;fillColor=#ffe6cc;strokeColor=#d79b00;startSize=130;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="GBdxDm6_3jsFwyOYm7Gt-3" value="网络模块" style="swimlane;fontSize=50;fillColor=#ffe6cc;strokeColor=#d79b00;startSize=130;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="1520" y="-630" width="3910" height="2900" as="geometry" />
         </mxCell>
         <mxCell id="C9IEF28Jtl-8NMZRrq5K-0" value="DeliveryNotificationManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" parent="GBdxDm6_3jsFwyOYm7Gt-3" vertex="1">
@@ -1294,10 +1294,10 @@
             <mxPoint x="-350" y="980.0040000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GBdxDm6_3jsFwyOYm7Gt-67" value="输入模块" style="swimlane;fontSize=50;startSize=130;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="GBdxDm6_3jsFwyOYm7Gt-67" value="输入模块" style="swimlane;fontSize=50;startSize=130;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="-1310" y="90" width="1150" height="1200" as="geometry" />
         </mxCell>
-        <mxCell id="GBdxDm6_3jsFwyOYm7Gt-68" value="游戏模块" style="swimlane;fontSize=50;startSize=100;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="oc5jsSyHZVvdx0_5WuaF-1">
+        <mxCell id="GBdxDm6_3jsFwyOYm7Gt-68" value="游戏模块" style="swimlane;fontSize=50;startSize=100;fillColor=#f8cecc;strokeColor=#b85450;" parent="oc5jsSyHZVvdx0_5WuaF-1" vertex="1">
           <mxGeometry x="150" y="-1030" width="1220" height="820" as="geometry" />
         </mxCell>
       </root>
