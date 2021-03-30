@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-29T01:39:05.596Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="cwOfyEdZHLYQw166f0e4" version="14.5.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-30T01:01:31.069Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="EdBDQRZVI0k8QfJ7Jop-" version="14.5.1" type="github" pages="4">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
-    <mxGraphModel dx="3197" dy="1270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1304,7 +1304,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="p_RZYZfQPKXuULMZhJ6T" name="第 3 页">
-    <mxGraphModel dx="3327" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3685" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="nFRE_VfkSjiOftR0RpnZ-0" />
         <mxCell id="nFRE_VfkSjiOftR0RpnZ-1" parent="nFRE_VfkSjiOftR0RpnZ-0" />
@@ -1336,6 +1336,17 @@
         </mxCell>
         <mxCell id="Kx-qCtIAzAozlrSnghMk-6" value="游戏模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fillColor=#f8cecc;strokeColor=#b85450;" parent="nFRE_VfkSjiOftR0RpnZ-1" vertex="1">
           <mxGeometry x="-981" y="670" width="310" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jrjjD3-Jfcm1ZmC9QB0d" name="第 4 页">
+    <mxGraphModel dx="569" dy="305" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0-rttwxjCRg_1MTWBieB-0" />
+        <mxCell id="0-rttwxjCRg_1MTWBieB-1" parent="0-rttwxjCRg_1MTWBieB-0" />
+        <mxCell id="0-rttwxjCRg_1MTWBieB-2" value="服务端如何处理客户端的操作并同步给其他客户端的：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="0-rttwxjCRg_1MTWBieB-1">
+          <mxGeometry width="300" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
