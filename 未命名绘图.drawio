@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-30T01:01:31.069Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="EdBDQRZVI0k8QfJ7Jop-" version="14.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-31T16:42:22.139Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="L5SCr59LIFqBbWcAX8_O" version="14.5.3" type="github" pages="4">
   <diagram id="xwWjJwD1WTw5GsHI7N3W" name="第 1 页">
     <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -860,7 +860,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fcJS_M9sNya6CtINCrLa" name="第 2 页">
-    <mxGraphModel dx="2839" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3327" dy="2065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-0" />
         <mxCell id="oc5jsSyHZVvdx0_5WuaF-1" parent="oc5jsSyHZVvdx0_5WuaF-0" />
@@ -1304,7 +1304,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="p_RZYZfQPKXuULMZhJ6T" name="第 3 页">
-    <mxGraphModel dx="3685" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5209" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="nFRE_VfkSjiOftR0RpnZ-0" />
         <mxCell id="nFRE_VfkSjiOftR0RpnZ-1" parent="nFRE_VfkSjiOftR0RpnZ-0" />
@@ -1317,7 +1317,7 @@
         <mxCell id="Kx-qCtIAzAozlrSnghMk-2" value="显示模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="nFRE_VfkSjiOftR0RpnZ-1" vertex="1">
           <mxGeometry x="-511" y="670" width="310" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="A0BCzQTxZhmeABHaJtnc-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeWidth=5;" edge="1" parent="nFRE_VfkSjiOftR0RpnZ-1" source="Kx-qCtIAzAozlrSnghMk-3" target="Kx-qCtIAzAozlrSnghMk-6">
+        <mxCell id="A0BCzQTxZhmeABHaJtnc-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeWidth=5;" parent="nFRE_VfkSjiOftR0RpnZ-1" source="Kx-qCtIAzAozlrSnghMk-3" target="Kx-qCtIAzAozlrSnghMk-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Kx-qCtIAzAozlrSnghMk-3" value="网络模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="nFRE_VfkSjiOftR0RpnZ-1" vertex="1">
@@ -1341,12 +1341,39 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jrjjD3-Jfcm1ZmC9QB0d" name="第 4 页">
-    <mxGraphModel dx="569" dy="305" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-232" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0-rttwxjCRg_1MTWBieB-0" />
         <mxCell id="0-rttwxjCRg_1MTWBieB-1" parent="0-rttwxjCRg_1MTWBieB-0" />
-        <mxCell id="0-rttwxjCRg_1MTWBieB-2" value="服务端如何处理客户端的操作并同步给其他客户端的：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="0-rttwxjCRg_1MTWBieB-1">
-          <mxGeometry width="300" height="20" as="geometry" />
+        <mxCell id="l_kRQluW7_uMlisY0oL4-0" value="NetworkManagerServer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="0-rttwxjCRg_1MTWBieB-1">
+          <mxGeometry x="2481" y="150" width="650" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-1" value=" typedef unordered_map&lt; int, ClientProxyPtr &gt; IntToClientMap;&#xa; typedef unordered_map&lt; SocketAddress, ClientProxyPtr &gt; AddressToClientMap;&#xa;&#xa;+ static NetworkManagerServer* sInstance;&#xa;- AddressToClientMap  mAddressToClientMap;&#xa;- IntToClientMap   mPlayerIdToClientMap;&#xa;- int    mNewPlayerId;&#xa;- int    mNewNetworkId;&#xa;- float   mTimeOfLastSatePacket;&#xa;- float   mTimeBetweenStatePackets;&#xa;- float   mClientDisconnectTimeout;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l_kRQluW7_uMlisY0oL4-0">
+          <mxGeometry y="36" width="650" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="l_kRQluW7_uMlisY0oL4-0">
+          <mxGeometry y="200" width="650" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-3" value="+ static bool    StaticInit( uint16_t inPort );&#xa;+ virtual void   ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) override;&#xa;+ virtual void   HandleConnectionReset( const SocketAddress&amp; inFromAddress ) override;&#xa;+ void   SendOutgoingPackets();&#xa;+ void   CheckForDisconnects();&#xa;+ void   RegisterGameObject( GameObjectPtr inGameObject );&#xa;+ inline GameObjectPtr RegisterAndReturn( GameObject* inGameObject );&#xa;+ void   UnregisterGameObject( GameObject* inGameObject );&#xa;+ void   SetStateDirty( int inNetworkId, uint32_t inDirtyState );&#xa;+ void   RespawnCats();&#xa;+ ClientProxyPtr GetClientProxy( int inPlayerId ) const;&#xa;&#xa;- NetworkManagerServer();&#xa;- void HandlePacketFromNewClient( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress );&#xa;- void ProcessPacket( ClientProxyPtr inClientProxy, InputMemoryBitStream&amp; inInputStream );&#xa;- void SendWelcomePacket( ClientProxyPtr inClientProxy );&#xa;- void UpdateAllClients();&#xa;- void AddWorldStateToPacket( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void AddScoreBoardStateToPacket( OutputMemoryBitStream&amp; inOutputStream );&#xa;- void SendStatePacketToClient( ClientProxyPtr inClientProxy );&#xa;- void WriteLastMoveTimestampIfDirty( OutputMemoryBitStream&amp; inOutputStream, ClientProxyPtr inClientProxy );&#xa;- void HandleInputPacket( ClientProxyPtr inClientProxy, InputMemoryBitStream&amp; inInputStream );&#xa;- void HandleClientDisconnected( ClientProxyPtr inClientProxy );&#xa;- int  GetNewNetworkId();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l_kRQluW7_uMlisY0oL4-0">
+          <mxGeometry y="208" width="650" height="362" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-4" value="NetworkManager&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="0-rttwxjCRg_1MTWBieB-1">
+          <mxGeometry x="2480" y="-440" width="650" height="514" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-5" value="+ static const uint32_t kHelloCC = &#39;HELO&#39;;&#xa;+ static const uint32_t kWelcomeCC = &#39;WLCM&#39;;&#xa;+ static const uint32_t kStateCC = &#39;STAT&#39;;&#xa;+ static const uint32_t kInputCC = &#39;INPT&#39;;&#xa;+ static const int  kMaxPacketsPerFrameCount = 10;&#xa;typedef unordered_map&lt; int, GameObjectPtr &gt; IntToGameObjectMap;&#xa;# IntToGameObjectMap  mNetworkIdToGameObjectMap;&#xa;&#xa;- queue&lt; ReceivedPacket, list&lt; ReceivedPacket &gt; &gt; mPacketQueue;&#xa;- UDPSocketPtr mSocket;&#xa;模拟延迟丢包相关&#xa;- WeightedTimedMovingAverage mBytesReceivedPerSecond;&#xa;- WeightedTimedMovingAverage mBytesSentPerSecond;&#xa;- int       mBytesSentThisFrame;&#xa;- float      mDropPacketChance;&#xa;- float      mSimulatedLatency;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l_kRQluW7_uMlisY0oL4-4">
+          <mxGeometry y="40" width="650" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="l_kRQluW7_uMlisY0oL4-4">
+          <mxGeometry y="284" width="650" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-7" value="+ bool Init( uint16_t inPort ); &#xa;+ void ProcessIncomingPackets();&#xa;+ virtual void ProcessPacket( InputMemoryBitStream&amp; inInputStream, const SocketAddress&amp; inFromAddress ) = 0;&#xa;+ virtual void HandleConnectionReset( const SocketAddress&amp; inFromAddress );&#xa;+ void SendPacket( const OutputMemoryBitStream&amp; inOutputStream, const SocketAddress&amp; inFromAddress );&#xa;+ inline GameObjectPtr GetGameObject( int inNetworkId ) const;&#xa;+ void AddToNetworkIdToGameObjectMap( GameObjectPtr inGameObject );&#xa;+ void RemoveFromNetworkIdToGameObjectMap( GameObjectPtr inGameObject );&#xa;模拟延迟丢包相关&#xa;+ const WeightedTimedMovingAverage&amp; GetBytesReceivedPerSecond() const;&#xa;+ const WeightedTimedMovingAverage&amp; GetBytesSentPerSecond()  const;&#xa;+ void SetDropPacketChance( float inChance );&#xa;+ void SetSimulatedLatency( float inLatency );&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l_kRQluW7_uMlisY0oL4-4">
+          <mxGeometry y="292" width="650" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="l_kRQluW7_uMlisY0oL4-8" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.425;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="0-rttwxjCRg_1MTWBieB-1" source="l_kRQluW7_uMlisY0oL4-0" target="l_kRQluW7_uMlisY0oL4-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1563" y="1584" as="sourcePoint" />
+            <mxPoint x="1463" y="1534" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
